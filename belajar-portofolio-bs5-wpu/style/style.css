@@ -1,3 +1,28 @@
 nav {
-  background-color: #ffe6e6;
+  background-color: #f2bed1;
+}
+
+.jumbotron {
+  padding-top: 6em;
+  background-color: #f8e8ee;
+}
+
+.jumbotron img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100px;
+}
+
+#project {
+  background-color: #f8e8ee;
+}
+
+footer {
+  background-color: #f2bed1;
+}
+
+section {
+  padding-top: 4em;
 }
