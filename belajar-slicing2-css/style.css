@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: Montserrat, arial;
+}
+
+:root {
+  --primary: #020948;
+  --secondary: #75e6ff;
+  --tertiary: #e8e9ff;
+  --accent: #fb6b1a;
+  --dark: #333333;
+  --light: #ffffff;
+  --foreground: #f6f6f6;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.page-center {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.gap-48 {
+  gap: 48px;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero {
+  background-color: var(--primary);
+  padding: 60px 0;
+}
+
+.text-white {
+  color: var(--light);
+}
+
+.text-ink {
+  color: var(--dark);
+}
+
+.my-auto {
+  margin: auto 0;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 16px 32px;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+}
+
+button.primary {
+  background-color: var(--accent);
+  color: var(--light);
+}
+
+button.secondary {
+  background-color: var(--light);
+  color: var(--primary);
+}
+
+.card {
+  padding: 32px;
+  border-radius: 10px;
+  background-color: var(--foreground);
+  box-shadow: 0px 16px 40px 0 rgba(0, 0, 0, 0.2);
+  color: var(--dark);
+  cursor: pointer;
+  max-width: 300px;
+}
+
+.card:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.card img {
+  padding: 64px;
+  height: 64px;
+}
+
+/* media query for mobile */
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
+
+  .hero-content {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero-right img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* media query for desktop */
+@media (min-width: 768px) {
+  .btn {
+    width: fit-content;
+  }
+
+  .hero-right img {
+    width: 530px;
+    height: 570px;
+  }
+}
