@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: Montserrat, arial;
+}
+
+:root {
+  --primary: #fe7613;
+  --secondary: #3a46fd;
+  --background1: #fffedb;
+  --background2: #fefeff;
+  --black: #000000;
+  --footer: #d5d5d4;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.page-center {
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.grid {
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.grid-row {
+  grid-template-rows: 16em 23em;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex {
+  flex-direction: column;
+}
+
+.flex-g1 {
+  flex-grow: 0;
+}
+
+.mx-l {
+  margin-left: 1.8em;
+}
+
+.my-t {
+  margin-top: 1.8em;
+}
+
+.gap-1 {
+  gap: 0.85em;
+}
+
+.gap-2 {
+  gap: 10em;
+}
+
+.mb-1 {
+  margin-bottom: 0.25em;
+}
+
+.content-left {
+  background-color: var(--background1);
+}
+
+.font-b {
+  font-weight: 700;
+}
+
+.font-l {
+  font-weight: 500;
+}
+
+.font-1 {
+  font-size: 1rem;
+}
+
+.font-15 {
+  font-size: 1.5em;
+}
+
+.font-2 {
+  font-size: 2rem;
+}
+
+.font-3 {
+  font-size: 3rem;
+}
+
+.font-4 {
+  font-size: 4rem;
+}
+
+.content-left {
+  color: var(--primary);
+}
+
+.btn {
+  border: none;
+  padding: 1em 5.25em;
+  border-radius: 4px;
+  background-color: var(--secondary);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3234cc;
+}
+
+.text-ac {
+  text-align: center;
+}
+
+.justify-c {
+  justify-content: center;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.justify-bw {
+  justify-content: space-between;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+}
+
+.relative {
+  position: relative;
+}
+
+.content-right {
+  padding: 32px 24px;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.footer img {
+  width: 40px;
+  height: 40px;
+}
+
+.link p,
+a {
+  font-size: 0.8rem;
+  color: var(--footer);
+}
+
+.inline-b {
+  display: inline-block;
+}
+
+.animation1 {
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(18), cursor 0.7s step-end infinite alternate;
+}
+
+.animation2 {
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(44) infinite, cursor 0.7s step-end infinite alternate;
+}
+
+/* blinking cursor */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* effect chatGPT */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
